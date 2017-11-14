@@ -1,7 +1,7 @@
 # PSARTSUP
 Code for reconstruction of polyenergetic CT data using superiorization
 
-This archive contains code used for the Superiorized pSART method described in "Superiorized algorithm for reconstruction of CT images from sparse-view and limited-angle polyenergetic data" by Humphries, Winn and Faridani (https://arxiv.org/abs/1701.03396), and "Superiorized polyenergetic reconstruction algorithm for reduction of metal artifacts in CT images" by Humphries & Gibali (http://faculty.uwashington.edu/thumphri/HG17.pdf). I am releasing it under the GNU Public License: https://www.gnu.org/licenses/gpl-3.0.en.html
+This archive contains code used for the Superiorized pSART method described in "Superiorized algorithm for reconstruction of CT images from sparse-view and limited-angle polyenergetic data" by Humphries, Winn and Faridani (https://arxiv.org/abs/1701.03396), and "Superiorized polyenergetic reconstruction algorithm for reduction of metal artifacts in CT images" by Humphries & Gibali (http://faculty.washington.edu/thumphri/HG17.pdf). I am releasing it under the GNU Public License: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 The "core" directory contains functions implementing the reconstruction algorithms, routines for generating projection and phantom data, and implementations of the TV and anisotropic TV calculations. The "Experiments" directory contains scripts for running the experiments described in the aforementioned papers. Both directories contain ReadMes describing their contents.
 
