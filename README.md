@@ -1,12 +1,11 @@
 # PSARTSUP
 Code for reconstruction of polyenergetic CT data using superiorization
 
-This archive contains code used for the Superiorized pSART method described in "Superiorized algorithm for reconstruction of CT images from sparse-view and limited-angle polyenergetic data" by Humphries, Winn and Faridani (https://arxiv.org/abs/1701.03396), and "Superiorized polyenergetic reconstruction algorithm 
-% for reduction of metal artifacts in CT images" by Humphries & Gibali (http://faculty.uwashington.edu/thumphri/HG17.pdf). I am releasing it under the GNU Public License: https://www.gnu.org/licenses/gpl-3.0.en.html
+This archive contains code used for the Superiorized pSART method described in "Superiorized algorithm for reconstruction of CT images from sparse-view and limited-angle polyenergetic data" by Humphries, Winn and Faridani (https://arxiv.org/abs/1701.03396), and "Superiorized polyenergetic reconstruction algorithm for reduction of metal artifacts in CT images" by Humphries & Gibali (http://faculty.uwashington.edu/thumphri/HG17.pdf). I am releasing it under the GNU Public License: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 The "core" directory contains functions implementing the reconstruction algorithms, routines for generating projection and phantom data, and implementations of the TV and anisotropic TV calculations. The "Experiments" directory contains scripts for running the experiments described in the aforementioned papers. Both directories contain ReadMes describing their contents.
 
-The code uses the Michigan Image Reconstruction Toolbox (MIRT) to generate polyenergetic X-ray spectra and attenuation coefficients for different materials. You can find the toolbox at https://web.eecs.umich.edu/~fessler/code/ . Note that you may need to modify the file irt/ct/xray_read_dens.m included in that toolbox as it does not contain density information for some of the body tissues used in the experiments. (These can be found in the online NIST database at http://physics.nist.gov/PhysRefData/XrayMassCoef/tab2.html). It also requires the Matlab Image Processing toolbox.
+The code uses the Matlab Image Processing toolbox, as well as the Michigan Image Reconstruction Toolbox (MIRT) to generate polyenergetic X-ray spectra and attenuation coefficients for different materials, as well as construct system matrices. You can find the MIRT at https://web.eecs.umich.edu/~fessler/code/ . Note that you may need to modify the file irt/ct/xray_read_dens.m included in that toolbox as it does not contain density information for some of the body tissues used in the experiments. (These can be found in the online NIST database at http://physics.nist.gov/PhysRefData/XrayMassCoef/tab2.html). 
 
 You are free to use this code for educational purposes, for your own experiments or to compare against other methods. I would ask that you cite the following paper in any publications which use this code:
 
